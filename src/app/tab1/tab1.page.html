@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        Calc. Interest compounded
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="calculate()">
+    <ion-item>
+      <ion-label position="floating">Deposit Value ($) :</ion-label>
+      <ion-input type="number" [(ngModel)]="depositValue" name="depositValue" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Interest for month (%):</ion-label>
+      <ion-input type="number" [(ngModel)]="interest" max-length=100 name="interest" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Months for calculate:</ion-label>
+      <ion-input type="number" [(ngModel)]="monthCalculate" name="monthCalculate" ></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">
+      <ion-icon slot="start" name="calculator"></ion-icon>
+      Calculate
+    </ion-button>
+  </form>
+
+  <ion-grid *ngIf="items.length > 0">
+    <ion-row>
+      <ion-col align-items-center>
+        M
+      </ion-col>
+      <ion-col align-items-center>
+        Old Value
+      </ion-col>
+      <ion-col align-items-center>
+        Added
+      </ion-col>
+      <ion-col align-items-center>
+        New value
+      </ion-col>
+    </ion-row>
+    <hr style="background: black;">
+    <ion-row *ngFor="let item of items">
+      <ion-col>
+        {{item.month}}
+      </ion-col>
+      <ion-col>
+        {{item.old}}
+      </ion-col>
+      <ion-col>
+        {{item.added}}
+      </ion-col>
+      <ion-col>
+        {{item.new}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
