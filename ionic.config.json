@@ -1,5 +1,8 @@
 {
   "name": "CalcCompoundInterest",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }
