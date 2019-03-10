@@ -13,7 +13,7 @@ export class Tab1Page {
     monthCalculate: number;
     items: Array<Values> = [];
 
-    constructor() {     
+    constructor() {
     }
     
 

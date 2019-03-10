@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-        Calc. Interest compounded
+      {{"Calculate" | translate }}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,20 +9,20 @@
 <ion-content>
   <form (ngSubmit)="calculate()">
     <ion-item>
-      <ion-label position="floating">Deposit Value ($) :</ion-label>
+      <ion-label position="floating">{{"DepositValue" | translate }}:</ion-label>
       <ion-input type="number" [(ngModel)]="depositValue" name="depositValue" required></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Interest for month (%):</ion-label>
+      <ion-label position="floating">{{"InterestForMonth" | translate }}:</ion-label>
       <ion-input type="number" [(ngModel)]="interest" max-length=100 name="interest" required></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Months for calculate:</ion-label>
+      <ion-label position="floating">{{"MonthsForCalculate" | translate }}:</ion-label>
       <ion-input type="number" [(ngModel)]="monthCalculate" name="monthCalculate" ></ion-input>
     </ion-item>
     <ion-button expand="block" type="submit">
       <ion-icon slot="start" name="calculator"></ion-icon>
-      Calculate
+      {{"Calculate" | translate }}
     </ion-button>
   </form>
 
@@ -32,13 +32,13 @@
         M
       </ion-col>
       <ion-col align-items-center>
-        Old Value
+        {{"OldValue" | translate }}
       </ion-col>
       <ion-col align-items-center>
-        Added
+        {{"Added" | translate }}        
       </ion-col>
       <ion-col align-items-center>
-        New value
+        {{"NewValue" | translate }}        
       </ion-col>
     </ion-row>
     <hr style="background: black;">
