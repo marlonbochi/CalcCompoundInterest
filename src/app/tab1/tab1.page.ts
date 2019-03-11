@@ -18,7 +18,7 @@ export class Tab1Page {
     
 
     calculate() {
-        let valueOld = 0;
+        let valueOld = this.depositValue;
         let newValue = this.depositValue;
 
         this.items = [];

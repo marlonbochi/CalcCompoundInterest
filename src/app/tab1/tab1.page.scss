@@ -2,3 +2,11 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+ion-item {
+  margin-right: calc(var(--padding-start) + var(--ion-safe-area-left, 0px));
+}
+
+.btn_calculate {
+  margin-top: 30px;
+}

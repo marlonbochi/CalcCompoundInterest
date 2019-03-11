@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="calculator.interest" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="calculator.interest" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Calculator Interest</name>
     <description>A calculator for interest values</description>
     <author email="marlon.bueno@gmail.com" href="http://www.marlonbochi.com.br/">Marlon Bueno Bochi</author>
